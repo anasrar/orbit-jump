@@ -1,0 +1,6 @@
+{
+  mangle: {
+    properties: true,
+    module: true,
+  }
+}

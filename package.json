@@ -1,0 +1,20 @@
+{
+  "name": "js13kgames_orbit_jump",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "rm -rf ./dist/* && parcel serve ./src/index.html --no-source-maps",
+    "build": "rm -rf ./dist/* && parcel build ./src/index.html --no-content-hash --no-source-maps --public-url \"./\" && node ./scripts/zip.mjs --experimental-modules",
+    "svg-walls": "node ./scripts/svg-path-to-wall.mjs --experimental-modules"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "archiver": "^5.3.0",
+    "chalk": "^4.1.2",
+    "parcel": "^2.0.0-rc.0",
+    "zzfx": "^1.1.7"
+  }
+}
